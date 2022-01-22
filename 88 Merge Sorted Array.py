@@ -12,10 +12,10 @@ class Solution(object):
         #Sol1: T: O(M+N) S: O(1)
         n1 = m - 1
         n2 = n - 1
-        for p in range (m+n-1,-1, -1):
+        for p in range (m+n-1,-1, -1): //Start from end of nums1 array
             if n2 < 0 :
                 break
-            if n1>= 0 and nums1[n1] > nums2[n2] :
+            if n1 >= 0 and nums1[n1] > nums2[n2] :
                 nums1[p] = nums1[n1]
                 n1 -= 1
             else:
