@@ -1,4 +1,5 @@
 #https://leetcode.com/problems/3sum/
+#Sol: T: O(n2) S: O(n) 
 class Solution(object):
     def threeSum(self, nums):
         """
@@ -27,5 +28,5 @@ class Solution(object):
                 result.append([nums[i], nums[low], nums[high]])
                 low += 1
                 high -= 1
-                while low < high and nums[low] == nums [low-1]:
+                while low < high and nums[low] == nums[low-1]:
                     low += 1
